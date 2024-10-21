@@ -164,6 +164,7 @@ function UserList() {
                 <Button variant="info" size="sm">Details</Button>
                 </Link>
                 <Button
+                style={{marginLeft:'20px'}}
                   variant="warning"
                   size="sm"
                   className="ml-5"
@@ -172,6 +173,7 @@ function UserList() {
                   Edit
                 </Button>
                 <Button
+                 style={{marginLeft:'20px'}}
                   variant="danger"
                   size="sm"
                   className="ml-5"
