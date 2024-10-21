@@ -143,8 +143,8 @@ function UserList() {
             <th>Email</th>
             <th>Phone</th>
             <th>Streert</th>
-            <th>City</th>
-            <th>Website</th>
+            {/* <th>City</th>
+            <th>Website</th> */}
             <th>Actions</th>
            
           </tr>
@@ -157,16 +157,16 @@ function UserList() {
               <td>{user.email}</td>
               <td>{user.phone}</td>
               <td>{user.address.street}</td>
-              <td>{user.address.city}</td>
-              <td>{user.company.name}</td>
+              {/* <td>{user.address.city}</td>
+              <td>{user.company.name}</td> */}
               <td>
                 <Link to={`/user/${user.id}`}>
-                  <Button variant="info" size="sm">Details</Button>
+                <Button variant="info" size="sm">Details</Button>
                 </Link>
                 <Button
                   variant="warning"
                   size="sm"
-                  className="ml-2"
+                  className="ml-5"
                   onClick={() => handleEdit(user)}
                 >
                   Edit
@@ -174,7 +174,7 @@ function UserList() {
                 <Button
                   variant="danger"
                   size="sm"
-                  className="ml-2"
+                  className="ml-5"
                   onClick={() => handleDelete(user.id)}
                 >
                   Delete
